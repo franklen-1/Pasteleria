@@ -1,24 +1,25 @@
 body {
     font-family: 'Segoe UI', sans-serif;
     margin: 0;
-    background-color: #f9f6f2;
+    background: #fff;
+    /* background-color: #f9f6f2; */
     color: #333;
   }
   
-  .hero {
-    background-image: url('img/fondo.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 60px 20px;
-    color: white;
-    text-align: center;
-  }
+/* .hero {
+  background-image: url('img/fondo.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
+  color: white;
+  text-align: center;
+} */
   
   .nav-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.418);
     padding: 10px 20px;
   }
   
@@ -38,6 +39,64 @@ body {
     font-weight: bold;
   }
   
+  /*---------------------------------------------------------*/
+  .fondo{
+    background: linear-gradient(rgba(6, 7, 34, 0.6), rgba(0, 0, 29, 0.6)),
+    url("img/img1.jpg");
+    background-size: cover;      /* Que se ajuste al espacio total */
+    background-position: center; /* Centrada */
+    background-repeat: no-repeat; /* No repetir */
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .about{
+    background: #fff;
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .hero-content{
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+  .fa-brands{
+    font-size: 25px;
+    padding: 30px;
+
+  }
+  .about{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    justify-content: center;
+    align-items: center;
+  }
+  .column-wrap{
+    display: flex;
+    
+  }
+  .column-1{
+    background: #fff;
+    border-radius: 10px;
+    width: 700px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    /* align-items: center; */
+   
+  }
+  .column-1-dir{
+    text-align: left;
+  }
+  /*---------------------------------------------------------*/
   .hero-content h2 {
     font-size: 48px;
     margin-bottom: 10px;
@@ -46,9 +105,20 @@ body {
   .hero-content .btn {
     background-color: #d2691e;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 40px;
     text-decoration: none;
     border-radius: 5px;
+    width: 150px;
+    
+  }
+  .btn {
+    background-color: #d2691e;
+    color: white;
+    padding: 12px 40px;
+    border-radius: 5px;
+    width: 160px;
+    border: none;
+    
   }
   
   .grid-productos {
@@ -110,6 +180,25 @@ body {
     margin-top: 10px;
     font-size: 14px;
   }
+  .column-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+   
+  }
+  .linea{
+    display: flex;
+    justify-content: center; /* al centro horizontal */
+      /*  align-items: center;  -  al centro vertical */
+    height: 50px; 
+    padding: 10px;          /* ocupa toda la pantalla */
+}
+.linea-int{
+    height: 3px;
+    width: 20%;
+    background: linear-gradient(to right, #fdfdfd34 33%, rgb(221, 144, 2) 33% 66%, rgba(160, 33, 33, 0.267) 66%);
+}
   
   /* === CATEGORÍAS (Explore More) === */
 .explore {
@@ -117,6 +206,10 @@ body {
   text-align: center;
 }
 
+h2{
+  margin: 0;
+  padding: 5px 0;
+}
 .explore h2 {
   font-size: 32px;
   margin-bottom: 20px;
