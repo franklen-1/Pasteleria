@@ -5,62 +5,68 @@
   <title>Panadería Delicia</title>
   <link rel="stylesheet" href="estilos.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playball&display=swap" rel="stylesheet">
 
 </head>
 <body>
-<div class="fondo">
   <header class="hero">
     <nav class="nav-bar">
-      <h1 style="color: #f88c3f;">Panadería Delicia</h1>
+      <img style="width: 150px;" src="img/logo.png" alt="" srcset="">
       <ul class="menu">
         <li><a href="#inicio">Inicio</a></li>
         <li><a href="#productos">Productos</a></li>
         <li><a href="#nosotros">Nosotros</a></li>
         <li><a href="#pedidos">Pedidos</a></li>
+        <li><a href="#pedidos" style="color: #D90D58;"><i  class="fa-solid fa-user"></i> Mi cuenta <i class="fa-solid fa-chevron-down"></i></a></li>
+        
+        <i class="fa-solid fa-cart-shopping"></i>
+
       </ul>
     </nav>
   </header>
-  <section>
-    <div class="hero-content">
-      <h2 style="color:#fff"><span style="color: #fa822c;">Sweet Treats,</span> Perfect Eats</h2>
-      <p style="color: #fff;">Delicias horneadas con amor cada día</p>
-      <div class="icon-redes">
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-tiktok"></i>
-      </div>
-      <a class="btn" href="#productos">Ver productos</a>
-    </div>
-  </section>
+
+<div class="flex-container">
+  <div class="flex-item-left">
+      <div class="section-text">
+          <h1 style="color:#333; font-size: 65px;"><span style="color: #D90D58;">Sweet Treats, <br></span>Happy Moments</h1>
+          <h2 style="color: #D90D58; margin-top: -15px; font-size: 38px;">Delicias Horneadas con Amor cada Día.</h2>
+          <p style="color: #333;">En nuestra pastelería creamos postres frescos y únicos, preparados con ingredientes de calidad y un toque especial que transforma cada visita en una experiencia dulce e inolvidable.</p>
+          <div class="icon-redes">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-tiktok"></i>
+          </div>
+          <button style="height: 45px; width: 200px; border-radius: 20px;" class="btn" type="submit">Ver productos</button>
+      </div>  
+  </div>
+  <div class="flex-item-right">
+    
+  </div>
 </div>
 
-<section class="about">
-  <div class="column-wrap">
-    <div class="column-1">
-      <img style="width: 400px;" src="img/welcome.png" alt="">
+<section>
+    <div class="flex-container-valor">
+      <div><span><i class="fa-solid fa-wheat-awn"></i> Sabor auténtico.</span></div>
+      <div><span><i class="fa-regular fa-handshake"></i></i> Creatividad en cada detalle</span></div>
+      <div><span><i class="fa-regular fa-heart"></i>  Cercanía con el cliente</span></div>
     </div>
-    <div class="column-1" id="column-1-dir">
-      <h2 style="font-size: 48px;"><span style="color: #d2691e; font-size: 48px;">30</span> Years Of Excellence</h2>
-      <h3 style="font-size: 40px;">About Us</h3>
-      <h3 style="font-size: 20px;">OUR STORY</h3>
-      <p>The day for a three hour tour a three hour tour then one day he was shooting at some food and up through the ground came a oil that is its a beautiful day Got a dream and we just know now we are gonna make our dream come true so get a witch is shawl on a broomstick you can crawl on were gonna pay.</p>
-      <button class="btn" type="submit">Ver mas.</button>
-    </div>
-  </div>
 </section>
+
   <section id="productos" class="productos">
-    <h2 style="color: #d2691e; text-align: center; font-size: 35px;">TOP PRODUCTOS</h2>
+    <h2 style="color: #D90D58; text-align: center;">Top Productos</h2>
     <div class="linea"><div class="linea-int"></div></div>
     <div class="grid-productos">
       <div class="card">
-        <img src="img/pan.jpg" alt="Pan">
+        <img src="img/pizzascaseras.jpg" alt="Pan">
         <h3>Pan Artesanal</h3>
         <p>S/4.00</p>
         <button>Agregar</button>
       </div>
       <!-- Más productos similares -->
       <div class="card">
-        <img src="img/bizcocho.jpg" alt="Bizcocho">
+        <img src="img/pizzascaseras.jpg" alt="Bizcocho">
         <h3>Bizcocho</h3>
         <p>S/10.00</p>
         <button>Agregar</button>
@@ -72,19 +78,19 @@
         <button>Agregar</button>
       </div>
       <div class="card">
-        <img src="img/pionono.jpg" alt="Pionono">
+        <img src="img/pizzascaseras.jpg" alt="Pionono">
         <h3>Pionono</h3>
         <p>S/10.00</p>
         <button>Agregar</button>
       </div>
       <div class="card">
-        <img src="img/piedemanzana.jpg" alt="Postres">
+        <img src="img/pizzascaseras.jpg" alt="Postres">
         <h3>Pye de manzana</h3>
         <p>S/10.00</p>
         <button>Agregar</button>
       </div>
       <div class="card">
-        <img src="img/tortahelada.jpg" alt="Tortas">
+        <img src="img/pizzascaseras.jpg" alt="Tortas">
         <h3>Torta helada</h3>
         <p>S/10.00</p>
         <button>Agregar</button>
@@ -99,7 +105,8 @@
   </section>
 
   <section class="explore">
-    <h2>Explore More</h2>
+    <h2 style="color: #D90D58; text-align: center;">Explore More</h2>
+    <div class="linea"><div class="linea-int"></div></div>
     <div class="tabs">
       <button class="active">Panes</button>
       <button>Pizzas</button>
@@ -134,10 +141,25 @@
   </section>
   
 
-  <section id="nosotros" class="nosotros">
+  <!-- <section id="nosotros" class="nosotros">
     <h2>Sobre Nosotros</h2>
-    <p>Panadería familiar con recetas tradicionales y pasión por el pan y la pastelería.</p>
-  </section>
+    <p>Panadería familiar con recetas tradicionales y pasión por el pan y la pastelería.</p> -->
+<section class="about">
+  <div class="column-wrap">
+    <div class="column-1">
+      <img style="width: 400px;" src="img/welcome.png" alt="">
+    </div>
+    <div class="column-1" id="column-1-dir">
+      <h2 style="font-size: 48px;"><span style="color:#D90D58; font-size: 48px;">30</span> Años de excelencia</h2>
+      <h3 style="font-size: 40px;">About Us</h3>
+      <h3 style="font-size: 20px;">Nuestra Historia</h3>
+      <p>Nacimos con el sueño de compartir momentos dulces y especiales. Desde el primer día, nuestra pasión ha sido crear postres que combinan tradición, creatividad y un toque casero que se siente en cada bocado. Lo que comenzó como una pequeña ilusión, hoy es un espacio donde cada cliente puede disfrutar sabores únicos y sentirse como en casa.</p>
+      <button style="height: 45px; width: 200px; border-radius: 20px;" class="btn" type="submit">Ver mas</button>
+
+    </div>
+  </div>
+</section>
+
 
   <section id="pedidos">
     <h2>Haz tu Pedido</h2>
